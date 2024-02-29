@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    android:backgroundTint="#03123E"
+    android:backgroundTintMode="add"
+    tools:context=".TestlistesiFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/questionView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="3dp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintWidth_percent="0.6"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="Testlerin hepsini silmekten emin misiniz?"
+            android:textAlignment="center"
+            android:textColor="#2A3688"
+            android:textSize="0sp"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="40sp"
+            app:autoSizeMinTextSize="20sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.4"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+            app:layout_constraintWidth_percent="1" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="#2A3688"
+            android:padding="8dp"
+            android:text="Evet"
+            android:textSize="0sp"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="16sp"
+            app:autoSizeMinTextSize="6sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.33"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.9"
+            app:layout_constraintWidth_percent="0.4" />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="#30B7B0"
+            android:padding="8dp"
+            android:text="Hayır"
+            android:textSize="0sp"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="16sp"
+            app:autoSizeMinTextSize="6sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.33"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.9"
+            app:layout_constraintWidth_percent="0.4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#F4FCFF"
+        android:backgroundTint="#F4FCFF"
+        android:elevation="3dp"
+        android:fontFamily="@font/amaranth"
+        android:gravity="center"
+        android:text="TEST LIST"
+        android:textAlignment="gravity"
+        android:textColor="#2A3688"
+        android:textSize="0sp"
+        android:textStyle="bold"
+        android:translationX="0px"
+        app:autoSizeMaxTextSize="23sp"
+        app:autoSizeMinTextSize="6sp"
+        app:autoSizeStepGranularity="1sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="1" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#F4FCFF"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="Geritusu"
+        android:elevation="3dp"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"
+        android:textSize="0sp"
+        app:autoSizeMaxTextSize="42sp"
+        app:autoSizeMinTextSize="10sp"
+        app:autoSizeStepGranularity="1sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent="0.11"
+        app:tint="#2A3688" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.86"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintWidth_percent="1">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/white"
+            android:showDividers="middle|beginning|end|none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.765">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/white"
+                android:showDividers="middle|beginning|end|none">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.12"
+                    android:divider="@color/black"
+                    android:dividerPadding="5dp"
+                    android:gravity="center"
+                    android:showDividers="middle|beginning|end"
+                    android:text="ID"
+                    android:textColor="#FFFFFF"
+                    app:autoSizeMaxTextSize="12dp"
+                    app:autoSizeMinTextSize="2sp"
+                    app:autoSizeStepGranularity="0.2sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:divider="@color/black"
+                    android:dividerPadding="5dp"
+                    android:gravity="center"
+                    android:showDividers="middle|beginning|end|none"
+                    android:text="Name"
+                    android:textColor="#FFFFFF"
+                    app:autoSizeMaxTextSize="10.5dp"
+                    app:autoSizeMinTextSize="2sp"
+                    app:autoSizeStepGranularity="1sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.16"
+                    android:divider="@color/black"
+                    android:dividerPadding="5dp"
+                    android:gravity="center"
+                    android:showDividers="middle|beginning|end"
+                    android:text="Desc."
+                    android:textColor="#FFFFFF"
+                    app:autoSizeMaxTextSize="11.5dp"
+                    app:autoSizeMinTextSize="2sp"
+                    app:autoSizeStepGranularity="1sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14"
+                    android:divider="@color/black"
+                    android:dividerPadding="2dp"
+                    android:gravity="center"
+                    android:showDividers="middle|beginning|end"
+                    android:text="User"
+                    android:textColor="#FFFFFF"
+                    app:autoSizeMaxTextSize="11.5dp"
+                    app:autoSizeMinTextSize="2sp"
+                    app:autoSizeStepGranularity="1sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.16"
+                    android:divider="@color/black"
+                    android:dividerPadding="5dp"
+                    android:gravity="center"
+                    android:showDividers="middle|beginning|end"
+                    android:text="Status"
+                    android:textColor="#FFFFFF"
+                    app:autoSizeMaxTextSize="11dp"
+                    app:autoSizeMinTextSize="2sp"
+                    app:autoSizeStepGranularity="1sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:divider="@color/black"
+                    android:dividerPadding="5dp"
+                    android:gravity="center"
+                    android:showDividers="middle|beginning|end"
+                    android:text="Saved At"
+                    android:textColor="#FFFFFF"
+                    app:autoSizeMaxTextSize="10dp"
+                    app:autoSizeMinTextSize="2sp"
+                    app:autoSizeStepGranularity="1sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.185"
+                    android:divider="@color/black"
+                    android:dividerPadding="5dp"
+                    android:gravity="center"
+                    android:showDividers="middle|beginning|end"
+                    android:text="Duration"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    app:autoSizeMaxTextSize="10dp"
+                    app:autoSizeMinTextSize="2sp"
+                    app:autoSizeStepGranularity="1sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.205"
+                    android:divider="@color/black"
+                    android:dividerPadding="5dp"
+                    android:gravity="center"
+                    android:showDividers="middle|beginning|end"
+                    android:text="Save"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    app:autoSizeMaxTextSize="12dp"
+                    app:autoSizeMinTextSize="3sp"
+                    app:autoSizeStepGranularity="1sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.205"
+                    android:divider="@color/black"
+                    android:dividerPadding="5dp"
+                    android:gravity="center"
+                    android:showDividers="middle|beginning|end"
+                    android:text="Delete"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    app:autoSizeMaxTextSize="12dp"
+                    app:autoSizeMinTextSize="3sp"
+                    app:autoSizeStepGranularity="1sp"
+                    app:autoSizeTextType="uniform" />
+
+                <!-- Diğer sütun başlıklarını buraya ekleyebilirsiniz -->
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="CLEAR ALL"
+        android:textColor="#2A3688"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.06"
+        app:layout_constraintWidth_percent="0.4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

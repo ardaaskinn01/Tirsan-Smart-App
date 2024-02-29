@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.tirsankardan.tirsanuygulama.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_anasayfa"
+            app:destination="@id/anasayfa"
+            app:popUpTo="@id/login"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/anasayfa"
+        android:name="com.tirsankardan.tirsanuygulama.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" >
+        <action
+            android:id="@+id/action_anasayfa_to_testlistesiFragment"
+            app:destination="@id/testlistesiFragment" />
+        <action
+            android:id="@+id/action_anasayfa_to_testolusturFragment"
+            app:destination="@id/testolusturFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/canlitestFragment"
+        android:name="com.tirsankardan.tirsanuygulama.CanlitestFragment"
+        android:label="fragment_canlitest"
+        tools:layout="@layout/fragment_canlitest">
+        <argument
+            android:name="deviceAddress1"
+            app:argType="string" />
+        <argument
+            android:name="deviceAddress2"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/testlistesiFragment"
+        android:name="com.tirsankardan.tirsanuygulama.TestlistesiFragment"
+        android:label="fragment_testlistesi"
+        tools:layout="@layout/fragment_testlistesi" />
+    <fragment
+        android:id="@+id/testolusturFragment"
+        android:name="com.tirsankardan.tirsanuygulama.TestolusturFragment"
+        android:label="fragment_testolustur"
+        tools:layout="@layout/fragment_testolustur" >
+        <action
+            android:id="@+id/action_testolusturFragment_to_canlitestFragment"
+            app:destination="@id/canlitestFragment" />
+    </fragment>
+</navigation>
